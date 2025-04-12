@@ -63,9 +63,11 @@ def save_to_file(some_text):
     with open(FILEPATH, 'a') as f:
         f.write(some_text + "\n")
 
-def get_latest_ball(table):
+def get_latest_ball(table, reversed_rows=False):
     rows = table.find_all('tr')
     return_value_ball = return_value_event = return_value_description = ""
+    if reversed_rows:
+        rows = reversed(rows)
     for row in rows:
         cols = row.find_all(['td', 'th'])
         cols_text = [col.text.strip() for col in cols]
@@ -117,6 +119,18 @@ def get_curr_table(tables, second_innings_started, curr_ball, curr_ball_event):
     if len(tables) == 2:
         # match is finished..
         print("match finished")
+        # save last ball if not done
+        latest_ball, latest_ball_event, latest_ball_description = get_latest_ball(tables[1], reversed_rows=True)
+        if latest_ball:
+            if not second_innings_started:
+                save_to_file("Inning 2")
+                save_to_file("Ball Number, Description, Event, Timestamp")
+            print("2nd inn")
+            save_to_file(f"{latest_ball}, {latest_ball_description}, {latest_ball_event}, {get_timestamp(start_timestamp, tm_format)}")
+        else:
+            latest_ball, latest_ball_event, latest_ball_description = get_latest_ball(tables[0], reversed_rows=True)
+            if latest_ball:
+                save_to_file(f"{latest_ball}, {latest_ball_description}, {latest_ball_event}, {get_timestamp(start_timestamp, tm_format)}")
         return None, None, None, None
         # latest_ball, latest_ball_event, latest_ball_description = get_latest_ball(tables[1])
         # if latest_ball:
@@ -200,6 +214,8 @@ while(True):
                     curr_ball_event = latest_ball_event
                     if latest_ball_event in ["Four", "Six", "Out"]:
                         save_to_file(f"{latest_ball}, {latest_ball_description}, {latest_ball_event}, {get_timestamp(start_timestamp, tm_format)}")
+            else:
+                break
         time.sleep(20)
     except Exception as err:
         save_to_file(f"error:{err}")
