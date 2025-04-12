@@ -32,6 +32,7 @@ import time
 import sys
 from datetime import datetime
 
+
 tm_format = "%Y%m%d_%H%M%S"
 start_timestamp = datetime.now().strftime(tm_format)
 
@@ -116,7 +117,7 @@ def get_curr_table(tables, second_innings_started, curr_ball, curr_ball_event):
     if len(tables) == 2:
         # match is finished..
         print("match finished")
-        return
+        return None, None, None, None
         # latest_ball, latest_ball_event, latest_ball_description = get_latest_ball(tables[1])
         # if latest_ball:
         #     if not second_innings_started:
@@ -191,14 +192,14 @@ while(True):
             #     save_to_file("Ball Number, Description, Event, Timestamp")
             #     curr_ball = "0.0"
             #     curr_ball_event = ""
-
-            latest_ball, latest_ball_event, latest_ball_description = get_latest_ball(curr_table)
-            print("latest ball ", latest_ball, latest_ball_event, latest_ball_description)
-            if latest_ball and not is_same_ball(curr_ball, curr_ball_event, latest_ball, latest_ball_event):
-                curr_ball = latest_ball
-                curr_ball_event = latest_ball_event
-                if latest_ball_event in ["Four", "Six", "Out"]:
-                    save_to_file(f"{latest_ball}, {latest_ball_description}, {latest_ball_event}, {get_timestamp(start_timestamp, tm_format)}")
+            if curr_table:
+                latest_ball, latest_ball_event, latest_ball_description = get_latest_ball(curr_table)
+                print("latest ball ", latest_ball, latest_ball_event, latest_ball_description)
+                if latest_ball and not is_same_ball(curr_ball, curr_ball_event, latest_ball, latest_ball_event):
+                    curr_ball = latest_ball
+                    curr_ball_event = latest_ball_event
+                    if latest_ball_event in ["Four", "Six", "Out"]:
+                        save_to_file(f"{latest_ball}, {latest_ball_description}, {latest_ball_event}, {get_timestamp(start_timestamp, tm_format)}")
         time.sleep(20)
     except Exception as err:
         save_to_file(f"error:{err}")
