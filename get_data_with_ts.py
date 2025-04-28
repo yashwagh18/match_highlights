@@ -105,7 +105,7 @@ def get_timestamp(start_timestamp, tm_format):
     new_tm = datetime.now().strftime(tm_format)
     dt2 = datetime.strptime(new_tm, tm_format)
     delta = dt2 - dt1
-    total_seconds = int(delta.total_seconds()) + 3600
+    total_seconds = int(delta.total_seconds()) + 3600 - 30
 
     # Break down into hours, minutes, seconds
     hours = total_seconds // 3600
