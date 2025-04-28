@@ -1,27 +1,46 @@
-youtube highlights making steps -
+Steps to create match highlights - Once you get used to it, a you can create highlights of a 40 overs match in less than an hour! 
 
-case 1 - don't have timestamps
+This is only for Japan Cricket matches scored on CricClubs app.
 
-1. use get_data_without_ts.py and get 4/6/W balls. add it in google sheets. split text into columns.
-2. open video files in davinci resolve. change project resolution and frame rate. add all files to timeline in order. 
-3. go to edit page, select all, right click, create compound file. back to cut page.
-4. cut the video acc to data in spreadsheet. all fields are useful to quickly find next event ball.
-5. useful shortcuts - "ctrl \" to cut the video. "backspace" to delete a clip. you can set timecode at bottom right of the video display.
-6. add subscribe video at the end.
-7. go to edit tab, add title. "fusion title -> clean and simple" is good.
-8. export video to a file. upload to youtube from chrome browser.
+--------
 
-case 2 - have timestamps (from python script ran during the match)
+First, create a spreadsheet of 4/6/W balls using these steps.
 
-use get_data_with_ts.py
-need to test this once. need to test how to run in phone without crashing.
+Case 1 - You don't have timestamps of 4/6/W balls.
 
-1. before match - after teams added in cricclubss and toss done, get the match id and start video recording and python script at the same time.
-2. after match - stop python script. copy output file content and send to laptop via gmail/google sheets.
-3. open video files in davinci resolve. change project resolution and frame rate. add all files to timeline in order. 
-4. go to edit page, select all, right click, create compound file. back to cut page.
-5. start from end of the timestamp list and go backwards.
-6. in davinci resolve, go to each timestamp, find the event, cut the video, remove the clip after the event. do it for all timestamps from last to first.
-7. add subscribe video at the end.
-8. go to edit tab, add title. "fusion title -> clean and simple" is good.
-9. export video to a file. upload to youtube from chrome browser.
+1. Go to CricClubs app, open your match's scorecard, tap share icon on top right -> share externally, copy the url, get match id from the url.
+2. Run "python3 get_data_without_ts.py <match_id>" and get 4/6/W balls as output.
+    - Copy the output to Google Sheets. 
+    - Click on Data -> Split text into columns, for easier reading.
+
+
+Case 2 - You have timestamps (from running get_data_with_ts.py script).
+
+1. Before match start - When playing 11 are added in CricClubs and toss is done, follow case 1 -> step 1 to get the match id.
+2. Run command "python3 get_data_with_ts.py <match_id>". At the same time, start video recording.
+    - This command can be run in phone as well in Termux app. 
+    - This creates an output file containing the 4/6/W balls and their timestamps.
+3. After match end - stop video recording.
+    - Open the output file, copy its contents to Google Sheets. 
+    - Click on Data -> Split text into columns, for easier reading.
+
+----
+
+Once you have the spreadsheet ready, follow these steps. (Familiarity with Davinci Resolve software is needed here)
+
+1. Open hd1080602.drp file. Give a unique project name.
+2. Go to Edit tab. Replace broken media, if any.
+    - For this, right click on the media in the top left panel -> Replace selected clip -> Select from file browser.
+3. Change the intro text according to your match (AQCC vs MIB, JCL Division 2 etc).
+4. Replace the score card image at the end with your match's score card.
+    - To get this image, go to CricClubs app -> Open your match -> Summary -> Share icon on top right of the image.
+5. Go to Cut tab. Add all video files from the camera in top left panel. Then add them in correct order in A1/V1 channel in the bottom panel.
+6. Start from the end of the spreadsheet and go backwards. Find the last 4/6/W ball, cut that part, delete the part after that. Go to previous 4/6/W ball, repeat same.
+    - If you don't have timestamps - find the 4/6/W ball using ball number and other details.
+    - If you have timestamps - copy the timestamp, put it in the editor, scroll few seconds back. Easy!
+7. Need to add few extra seconds in beginning and end to accommodate intro, outro.
+8. Go to Quick export at top right -> YouTube and publish the video. Done!
+
+--------
+
+Useful shortcuts - "Ctrl \" to cut the video. "Backspace" to delete a clip.
