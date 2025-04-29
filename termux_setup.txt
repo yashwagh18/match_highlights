@@ -41,6 +41,17 @@ tm_start <match_id>
 
 --------
 
+To check progress - try one of these
+
+ls
+cat <output_file_name>
+
+tmux ls
+tmux attach -t mysession
+Ctrl B then D
+
+--------
+
 After match - Run these commands to get the output data. Then copy and paste it to Google Sheets.
 tm_stop
 ls
