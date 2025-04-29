@@ -9,7 +9,7 @@ First, create a spreadsheet of 4/6/W balls using these steps.
 Case 1 - You don't have timestamps of 4/6/W balls.
 
 1. Go to CricClubs app, open your match's scorecard, tap share icon on top right -> share externally, copy the url, get match id from the url.
-2. Run "python3 get_data_without_ts.py <match_id>" and get 4/6/W balls as output.
+2. Run "python get_data_without_ts.py <match_id>" and get 4/6/W balls as output.
     - Copy the output to Google Sheets. 
     - Click on Data -> Split text into columns, for easier reading.
 
@@ -17,8 +17,8 @@ Case 1 - You don't have timestamps of 4/6/W balls.
 Case 2 - You have timestamps (from running get_data_with_ts.py script).
 
 1. Before match start - When playing 11 are added in CricClubs and toss is done, follow case 1 -> step 1 to get the match id.
-2. Run command "python3 get_data_with_ts.py <match_id>". At the same time, start video recording.
-    - This command can be run in phone as well in Termux app. 
+2. Run command "python get_data_with_ts.py <match_id>". At the same time, start video recording.
+    - This command can be run in phone as well in Termux app. Check termux_setup.txt for the steps.
     - This creates an output file containing the 4/6/W balls and their timestamps.
 3. After match end - stop video recording.
     - Open the output file, copy its contents to Google Sheets. 

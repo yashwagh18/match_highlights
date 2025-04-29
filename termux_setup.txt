@@ -1,0 +1,47 @@
+Here's how to setup Termux app, if you want to run the python scripts in your android phone.
+
+--------
+
+Initial setup -
+
+1. Download and install Termux from here - https://f-droid.org/en/packages/com.termux/
+2. Open Termux app, run these commands -
+
+pkg install vim
+pkg install python
+pkg install tmux
+pip install requests
+pip install BeautifulSoup4
+pkg install git
+git clone https://github.com/yashwagh18/match_highlights.git
+
+3. Edit the .bashrc file, add below content to it. Run "vi ~/.bashrc"
+
+tm_start() {
+    if [ $# -lt 1 ]; then
+        echo "Usage: tm_start <matchid>"
+        return 1
+    fi
+    termux-wake-lock; tmux new-session -d -s mysession "python match_highlights/get_data_with_ts.py $1"
+}
+
+tm_stop() {
+    tmux kill-session -t mysession; termux-wake-unlock
+}
+
+alias tm_start='tm_start'
+alias tm_stop='tm_stop'
+
+4. Run "source ~/.bashrc"
+
+--------
+
+Before match start - Run this command. This will start get_data_with_ts.py script. Also, make sure to keep Termux app running in background.
+tm_start <match_id>
+
+--------
+
+After match - Run these commands to get the output data. Then copy and paste it to Google Sheets.
+tm_stop
+ls
+cat <output_file_name>
