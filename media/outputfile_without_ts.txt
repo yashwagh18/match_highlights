@@ -1,0 +1,58 @@
+Inning 1
+Ball Number, Description, Event, Over Difference, Time Difference
+2.1, B Jesinth to D Miyoshi, Out, 2.1, 7
+4.6, B Jesinth to S Debnath, Four, 2.5, 10
+6.5, P Kulothungan to S Debnath, Four, 1.5, 6
+10.6, E Ponnappan to S Debnath, Out, 4.1, 15
+12.4, E Ponnappan to E Oda, Four, 1.4, 5
+15.4, D Jebastin to V Bandara, Four, 3.0, 10
+17.6, P Kulothungan to V Bandara, Four, 2.2, 8
+18.2, S Kandasamy to V Bandara, Out, 0.2, 0
+19.6, P Kulothungan to A Thakur, Four, 1.4, 5
+20.5, S Kandasamy to V Bandara, Six, 0.5, 2
+23.3, D Jebastin to A Thakur, Four, 2.4, 9
+23.5, D Jebastin to A Thakur, Six, 0.2, 0
+25.2, S Kandasamy to A Thakur, Out, 1.3, 4
+27.5, S Kandasamy to V Bandara, Four, 2.3, 8
+28.5, B Jesinth to V Bandara, Four, 1.0, 2
+30.5, E Ponnappan to A Sherestha, Out, 2.0, 6
+31.5, B Jesinth to M Bajaj, Four, 1.0, 2
+32.5, E Ponnappan to V Bandara, Out, 1.0, 2
+32.6, E Ponnappan to A Sinha, Out, 0.1, 0
+33.2, B Jesinth to M Bajaj, Out, 0.2, 0
+33.3, B Jesinth to M Talha Ansari, Four, 0.1, 0
+34.2, E Ponnappan to U Bhadoriya, Four, 0.5, 2
+34.3, E Ponnappan to U Bhadoriya, Four, 0.1, 0
+34.6, E Ponnappan to U Bhadoriya, Four, 0.3, 0
+35.2, P Kulothungan to U Bhadoriya, Four, 0.2, 0
+35.5, P Kulothungan to U Bhadoriya, Out, 0.3, 0
+38.1, E Ponnappan to M Talha Ansari, Four, 2.2, 8
+38.6, E Ponnappan to M Talha Ansari, Six, 0.5, 2
+39.1, D Jebastin to M Kumar, Out, 0.1, 0
+Inning 2
+Ball Number, Description, Event, Over Difference, Time Difference
+1.1, A Sinha to J Veeraraghavan, Six, 1.1, 3
+1.2, A Sinha to J Veeraraghavan, Four, 0.1, 0
+2.1, U Bhadoriya to J Veeraraghavan, Out, 0.5, 2
+2.6, U Bhadoriya to G Meganathan, Four, 0.5, 2
+6.4, A Thakur to M Gunmma, Four, 3.4, 13
+7.5, A Sinha to M Gunmma, Out, 1.1, 3
+14.2, M Bajaj to G Meganathan, Four, 6.3, 24
+14.3, M Bajaj to G Meganathan, Four, 0.1, 0
+17.5, V Bandara to G Meganathan, Out, 3.2, 12
+19.2, U Bhadoriya to P Ravi, Out, 1.3, 4
+19.4, U Bhadoriya to S Kandasamy, Four, 0.2, 0
+20.6, M Kumar to S Kandasamy, Out, 1.2, 4
+21.5, U Bhadoriya to P Kulothungan, Four, 0.5, 2
+22.3, M Kumar to P Kulothungan, Four, 0.4, 1
+22.4, M Kumar to P Kulothungan, Out, 0.1, 0
+23.2, A Sinha to S Kandasamy, Four, 0.4, 1
+24.4, M Kumar to R Kumar, Four, 1.2, 4
+24.6, M Kumar to S Kandasamy, Six, 0.2, 0
+25.4, V Bandara to S Kandasamy, Out, 0.4, 1
+26.2, A Thakur to R Kumar, Out, 0.4, 1
+27.5, V Bandara to E Ponnappan, Four, 1.3, 4
+28.3, A Thakur to E Ponnappan, Four, 0.4, 1
+28.4, A Thakur to E Ponnappan, Out, 0.1, 0
+29.5, A Sinha to B Jesinth, Six, 1.1, 3
+30.1, A Thakur to D Jebastin, Out, 0.2, 0
