@@ -1,0 +1,63 @@
+Script start time: 2025/04/19 11:12
+Kawasaki Knight Riders 2nd XI vs Alpha Quashers Yokohama 2nd XI
+Inning 1
+Ball Number, Description, Event, Timestamp
+2.1, B Jesinth to D Miyoshi, Out, 01052800
+4.6, B Jesinth to S Debnath, Four, 01180200
+6.5, P Kulothungan to S Debnath, Four, 01261300
+10.6, E Ponnappan to S Debnath, Out, 01462100
+12.4, E Ponnappan to E Oda, Four, 01535200
+15.4, D Jebastin to V Bandara, Four, 02095600
+17.6, P Kulothungan to V Bandara, Four, 02174800
+18.2, S Kandasamy to V Bandara, Out, 02201100
+19.6, P Kulothungan to A Thakur, Four, 02272200
+20.5, S Kandasamy to V Bandara, Six, 02304800
+23.3, D Jebastin to A Thakur, Four, 02435000
+23.5, D Jebastin to A Thakur, Six, 02453300
+25.2, S Kandasamy to A Thakur, Out, 02545000
+27.5, S Kandasamy to V Bandara, Four, 03054900
+28.5, B Jesinth to V Bandara, Four, 03101700
+30.5, E Ponnappan to A Sherestha, Out, 03244200
+31.5, B Jesinth to M Bajaj, Four, 03303400
+32.5, E Ponnappan to V Bandara, Out, 03350100
+32.6, E Ponnappan to A Sinha, Out, 03362400
+33.2, B Jesinth to M Bajaj, Out, 03390900
+33.3, B Jesinth to M Talha Ansari, Four, 03413300
+34.2, E Ponnappan to U Bhadoriya, Four, 03441800
+34.3, E Ponnappan to U Bhadoriya, Four, 03445900
+34.6, E Ponnappan to U Bhadoriya, Four, 03462200
+35.2, P Kulothungan to U Bhadoriya, Four, 03490700
+35.5, P Kulothungan to U Bhadoriya, Out, 03505000
+38.1, E Ponnappan to M Talha Ansari, Four, 04002700
+38.6, E Ponnappan to M Talha Ansari, Six, 04025200
+39.1, D Jebastin to M Kumar, Out, 04043500
+Inning 2
+Ball Number, Description, Event, Timestamp
+1.1, A Sinha to J Veeraraghavan, Six, 04325000
+1.2, A Sinha to J Veeraraghavan, Four, 04335200
+2.1, U Bhadoriya to J Veeraraghavan, Out, 04373900
+2.6, U Bhadoriya to G Meganathan, Four, 04400400
+6.4, A Thakur to M Gunmma, Four, 04553400
+7.5, A Sinha to M Gunmma, Out, 05000300
+14.2, M Bajaj to G Meganathan, Four, 05270400
+14.3, M Bajaj to G Meganathan, Four, 05274500
+17.5, V Bandara to G Meganathan, Out, 05454400
+19.2, U Bhadoriya to P Ravi, Out, 05532100
+19.4, U Bhadoriya to S Kandasamy, Four, 05573000
+latest ball 19.4 is less than current ball 19.5
+latest ball 19.2 is less than current ball 19.5
+latest ball 19.2 is less than current ball 19.5
+20.6, M Kumar to S Kandasamy, Out, 06014100
+21.5, U Bhadoriya to P Kulothungan, Four, 06073400
+22.3, M Kumar to P Kulothungan, Four, 06100000
+22.4, M Kumar to P Kulothungan, Out, 06110300
+23.2, A Sinha to S Kandasamy, Four, 06143100
+24.4, M Kumar to R Kumar, Four, 06181900
+24.6, M Kumar to S Kandasamy, Six, 06194300
+25.4, V Bandara to S Kandasamy, Out, 06231100
+26.2, A Thakur to R Kumar, Out, 06272000
+27.5, V Bandara to E Ponnappan, Four, 06331400
+28.3, A Thakur to E Ponnappan, Four, 06360100
+28.4, A Thakur to E Ponnappan, Out, 06364300
+29.5, A Sinha to B Jesinth, Six, 06413500
+30.1, A Thakur to D Jebastin, Out, 06434100
